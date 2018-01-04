@@ -1,8 +1,11 @@
 # HTML5 History 模式
 
-`vue-router` 默认 hash 模式 —— 使用 URL 的 hash 来模拟一个完整的 URL，于是当 URL 改变时，页面不会重新加载。
+`vue-router` 默认 hash 模式 —— 使用 URL 的 hash 来模拟一个完整的 URL，于是当 URL 改变视图时，页面不会重新请求加载。
 
 如果不想要很丑的 hash，我们可以用路由的 **history 模式**，这种模式充分利用 `history.pushState` API 来完成 URL 跳转而无须重新加载页面。
+
+>hash —— 即地址栏 URL 中的 # 符号（此 hash 不是密码学里的散列运算）。
+
 
 ``` js
 const router = new VueRouter({
